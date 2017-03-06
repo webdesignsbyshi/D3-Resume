@@ -86,6 +86,7 @@ nav ul{
   font-family: "font2";
   font-size: 30px;
   text-align: center;
+  color: black;
 }
 
 .dwnld-resume{
@@ -114,10 +115,12 @@ nav ul{
 }
 
 .counter-div{
-  width: 100%;
+  width: 1000px;
+  max-width: 100%;
   height: 100%;
   padding-bottom: 80px;
   padding-top: 50px;
+  margin: 0 auto;
 }
 
 .counter-div span{
@@ -306,6 +309,7 @@ nav ul{
 
 .footer{
   width: 1200px;
+  max-width: 100%;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 20px;
