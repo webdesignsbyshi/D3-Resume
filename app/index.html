@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shianne Dyges - Project 1</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><img class="logo" src="images/logo.png"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section id="about">
+      <div class="div-in">
+        <p class="intro-txt">Hi, I'm <br><span id="target"></span></p>
+        <div class="vec-img">
+          <img class="responsive-img" src="images/me2.png">
+        </div>
+        <div class="about-txt-div">
+          <p class="about-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="dwnld-resume">
+          <a target="_blank" class="btn-floating btn-large waves-effect waves-light red" href="Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i></a> <a target="_blank" href="Resume.pdf" class="dwnld-txt"> Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="div-in">
+        <div class="counter-div">
+          <p class="resume-head">I've been working for...</p>
+          <div class="row">
+            <div class="col s12 m6 l3">
+              <p class="exp-txt">Years</p>
+              <span class="counter">52,147</span>
+            </div>
+            <div class="col s12 m6 l3">
+              <p class="exp-txt">Months</p>
+              <span class="counter">1.9583</span>
+            </div>
+            <div class="col s12 m6 l3">
+              <p class="exp-txt">Days</p>
+              <span class="counter">12345</span>
+            </div>
+            <div class="col s12 m6 l3">
+              <p class="exp-txt">Hours</p>
+              <span class="counter">12345</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education">
+          <h1 class="resume-head">Education</h1>
+
+          <div class="timeline">
+            <div class="steps-timeline">
+              <div class="steps-one">
+                <img class="steps-img" src="1.jpg" alt="" />
+                <h3 class="steps-name">University of Central Florida</h3>
+                <p class="steps-description">Bachelor of Arts - Digital Media</p>
+                <p class="steps-description2">Web Design Major | Psychology Minor | Tau Sigma National Honors Society | Deans List | GPA: 3.3</p>
+              </div>
+
+              <div class="steps-two">
+                <img class="steps-img" src="2.jpg" alt="" />
+                <h3 class="steps-name">Valencia College</h3>
+                <p class="steps-description">Associate of Arts</p>
+                <p class="steps-description2">General AA | Phi Theta Kappa National Honors Society | GPA: 3.7</p>
+              </div>
+
+              <div class="steps-three">
+                <img class="steps-img" src="3.jpg" alt="" />
+                <h3 class="steps-name">Northeast High School</h3>
+                <p class="steps-description">High School Diploma</p>
+                <p class="steps-description2">Architecture and Design Magnet Program</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h1 class="resume-head">Skills</h1>
+
+          <div id="development">
+            <svg id="dev" width="900" height="450"></svg>
+          </div>
+          <div id="design">
+            <div class="des">
+              <span class="chart" data-percent="86">
+                <span class="percent"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience">
+          <h1 class="resume-head">Experience</h1>
+
+          <div class="exp-in">
+            <div class="row">
+              <div class="grid-example col s12 m6">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/wtd.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Web TV Digest<i class="material-icons right">more_vert</i></span>
+                    <p><a target="_blank" href="http://www.webtvdigest.com/about-us/">website</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Web TV Digest<i class="material-icons right">close</i></span>
+                    <p>Director of Development and Programming</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-example col s12 m6">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/dn-card.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">DateNight 1 on 1<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h1 class="head">Portfolio</h1>
+      <div class="div-in">
+        <div class="port-in">
+          <div class="row">
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/pov.jpg" alt="">
+                      <div class="overlay">
+                         <h2>Push on View</h2>
+                         <a class="info" href="#">Visit Site</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/rl.jpg" alt="">
+                      <div class="overlay">
+                         <h2>RatchetLove.com</h2>
+                         <a class="info" href="#">Visit Site</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/dd.jpg" alt="">
+                      <div class="overlay">
+                         <h2>Designer Deals</h2>
+                         <a class="info" href="#">Visit Site</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/dj.jpg" alt="">
+                      <div class="overlay">
+                         <h2>DJ Dr. Phil</h2>
+                         <a class="info" href="#">Visit Site</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/safe.jpg" alt="">
+                      <div class="overlay">
+                         <h2>SAFE</h2>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/dn.jpg" alt="">
+                      <div class="overlay">
+                         <h2>Date Night 1 on 1</h2>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/tp.jpg" alt="">
+                      <div class="overlay">
+                         <h2>T&P Event Planning Services</h2>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="grid-in">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="contact-head">Like What You See? Contact Me!</h1>
+      <div class="div-in">
+        <div class="contact-info">
+          <div class="row">
+              <div class="grid-example col s12 m6">
+                <p class="contact-txt"><i class="fa fa-envelope-o" aria-hidden="true"></i> webdesignsbyshi@gmail.com</p>
+              </div>
+              <div class="grid-example col s12 m6">
+                <p class="contact-txt"><i class="fa fa-phone" aria-hidden="true"></i> (754) 422-4538</p>
+              </div>
+            </div>
+        </div>
+        <div class="form">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Message</label>
+                </div>
+              </div>
+              <div class="center-btn">
+                <button class="btn waves-effect waves-light btn" type="submit" name="action">Send
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="social">
+          <a class="btn-floating waves-effect waves-light purple darken-3"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="btn-floating waves-effect waves-light blue darken-2"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a class="btn-floating waves-effect waves-light red"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="btn-floating waves-effect waves-light blue darken-3"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a class="btn-floating waves-effect waves-light blue"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer">
+        <p class="foot-txt">Made with <i class="fa fa-heart" aria-hidden="true"></i> by Shianne Dyges</p>
+      </div>
+    </section>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/materialize/bin/materialize.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jquery.pagenav.js"></script>
+    <script src="https://use.fontawesome.com/51fbdde8ed.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
